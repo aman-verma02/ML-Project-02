@@ -1,12 +1,18 @@
- # Byte-compiled / optimized / DLL files
+# -----------------------------
+# Python bytecode / cache
+# -----------------------------
 __pycache__/
 *.py[cod]
 *$py.class
 
+# -----------------------------
 # C extensions
+# -----------------------------
 *.so
 
+# -----------------------------
 # Distribution / packaging
+# -----------------------------
 .Python
 build/
 develop-eggs/
@@ -26,29 +32,54 @@ share/python-wheels/
 *.egg
 MANIFEST
 
-# Virtual environment
+# -----------------------------
+# Virtual environments
+# -----------------------------
+.venv/
 venv/
 ENV/
 env/
-.venv/
 
-# Environments
-.artifacts
+# -----------------------------
+# Project-specific artifacts
+# -----------------------------
+artifacts/
+.artifacts/
 
+# -----------------------------
 # Jupyter Notebook
+# -----------------------------
 .ipynb_checkpoints
+*.ipynb~        # temporary notebook backups
 
-# Pytest / Coverage
+# -----------------------------
+# Pytest / Coverage / Tox
+# -----------------------------
 .pytest_cache/
 .coverage
+.coverage.*
+htmlcov/
 .tox/
 .nox/
 .cache/
 
-# IDEs
+# -----------------------------
+# IDEs / Editors
+# -----------------------------
 .vscode/
 .idea/
+*.sublime-project
+*.sublime-workspace
 
-# Logs
+# -----------------------------
+# Logs / Dumps
+# -----------------------------
 *.log
+*.out
+*.err
 
+# -----------------------------
+# OS-specific files
+# -----------------------------
+.DS_Store       # macOS
+Thumbs.db       # Windows
