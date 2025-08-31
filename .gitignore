@@ -32,6 +32,9 @@ ENV/
 env/
 .venv/
 
+# Environments
+.artifacts
+
 # Jupyter Notebook
 .ipynb_checkpoints
 
